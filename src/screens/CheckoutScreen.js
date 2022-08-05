@@ -38,7 +38,11 @@ const CheckoutScreen = () => {
         <Stack
           direction={{ md: "row", xs: "column" }}
           spacing={{ md: 10, xs: 6 }}
-          sx={{ mt: "5rem", justifyContent: "center", alignItems: "start" }}>
+          sx={{
+            mt: "5rem",
+            justifyContent: "center",
+            alignItems: { md: "start", xs: "center" },
+          }}>
           <Stack spacing={10} width={{ md: "100rem" }}>
             <Stack>
               <Typography color="#333" variant="h4">
@@ -49,7 +53,6 @@ const CheckoutScreen = () => {
                 Test, Daalchini Office Noida Uttar Pradesh
               </Typography>
             </Stack>
-
             <Stack>
               <Typography color="#333" variant="h4">
                 Cart Details

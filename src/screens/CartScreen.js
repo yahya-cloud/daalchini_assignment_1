@@ -41,6 +41,7 @@ const CartScreen = () => {
         </Typography>
       ) : (
         <Stack
+          flexWrap={"wrap"}
           direction={{ xs: "column", md: "row" }}
           spacing={2}
           sx={{
