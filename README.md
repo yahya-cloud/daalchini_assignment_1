@@ -24,7 +24,7 @@
 
 ## About The Project
 
--E-Commerce website built on React, application state is been managed by React context, MUI V5 for layout and styling components and react-router for rounting.   
+E-Commerce webapp built on React, application state is been managed by React context, MUI V5 for layout and styling components and react-router for rounting.   
 
 ---
 
@@ -48,7 +48,13 @@
 ![Screenshot 2022-08-05 at 13-19-10 React App](https://user-images.githubusercontent.com/59670962/183029058-2fb9382e-480f-4917-b022-cebb5414c6db.png)
 
 #### Checkout Screen
+
 ![Screenshot 2022-08-05 at 13-21-46 React App](https://user-images.githubusercontent.com/59670962/183029435-881f44a5-9e48-4ee4-9a32-c18d8190fe1b.png)
+
+#### Login Screen
+
+![Screenshot 2022-08-05 at 13-23-06 React App](https://user-images.githubusercontent.com/59670962/183030051-834de7de-ebc0-4077-804d-724cc073edbf.png)
+
 
 
 
