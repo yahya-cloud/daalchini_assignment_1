@@ -21,3 +21,18 @@
     <a href="https://github.com/yahya-cloud/daalchini_assignment_1/issues">Request Feature</a>
   </p>
 </p>
+
+## About The Project
+
+-E-Commerce website built on React, application state is been managed by React context, MUI V5 for layout and styling components and react-router for rounting.   
+
+---
+
+## Special About Project
+- Built custom React hooks for search filtering the product list.
+- Usage of React context for managing user state, cart products and etc.
+- Customized MUI theme for consistent styling.
+- Structured code for easy understanding and less redundancy.
+- Helper funtions for calculating total quantity, amount and price of product as per quantity etc.
+
+---
