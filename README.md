@@ -36,3 +36,19 @@
 - Helper funtions for calculating total quantity, amount and price of product as per quantity etc.
 
 ---
+
+## Output Sanpshots
+
+#### Products Screen
+
+![Screenshot 2022-08-05 at 13-20-00 React App](https://user-images.githubusercontent.com/59670962/183029223-018b2399-614b-40ac-b295-5ee874ff37b5.png)
+
+#### Cart Screen
+
+![Screenshot 2022-08-05 at 13-19-10 React App](https://user-images.githubusercontent.com/59670962/183029058-2fb9382e-480f-4917-b022-cebb5414c6db.png)
+
+#### Checkout Screen
+![Screenshot 2022-08-05 at 13-21-46 React App](https://user-images.githubusercontent.com/59670962/183029435-881f44a5-9e48-4ee4-9a32-c18d8190fe1b.png)
+
+
+
