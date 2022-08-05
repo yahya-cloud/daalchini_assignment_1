@@ -29,7 +29,7 @@ E-Commerce webapp built on React, application state is been managed by React con
 ---
 
 ## Special About Project
-- Built custom React hooks for search filtering the product list.
+- Built custom React hook for search filtering the product list.
 - Usage of React context for managing user state, cart products and etc.
 - Customized MUI theme for consistent styling.
 - Structured code for easy understanding and less redundancy.
