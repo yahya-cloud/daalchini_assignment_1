@@ -1,6 +1,7 @@
 import { Box, Stack, Typography, useTheme } from "@mui/material";
 import React, { useContext } from "react";
 import { AppContext } from "../../contexts/AppContext";
+import { totalQtyAmount } from "../../libs/utils";
 import Button from "../Button";
 import QuantityButton from "../QuantityButton";
 
@@ -13,19 +14,33 @@ const Product = ({ productId, name, price, qty, link }) => {
         padding: "1.5rem 2rem",
         boxSizing: "border-box",
         width: { md: "100rem" },
-        height: "16rem",
+        minHeight: "min-content",
+        maxHeight: "max-content",
         border: `1px solid ${theme.palette.primary.main}`,
         borderRadius: "8px",
-      }}
-      direction="row">
-      <Box sx={{ width: "20rem" }}>
+        justifyContent: "center",
+        alignItems: { xs: "center" },
+        flexWrap: "wrap",
+        flexDirection: { md: "row", xs: "column" },
+      }}>
+      <Box
+        sx={{
+          mb: { xs: 3, md: 0 },
+          height: { xs: "10rem", md: "14rem" },
+          width: "20rem",
+        }}>
         <img
-          style={{ height: "100%", borderRadius: "8px" }}
+          style={{ width: "100%", height: "100%", borderRadius: "8px" }}
           src={link}
           alt="product"
         />
       </Box>
-      <Stack sx={{ marginLeft: "3rem", justifyContent: "flex-start", flex: 1 }}>
+      <Stack
+        sx={{
+          marginLeft: { md: "3rem", xs: 0 },
+          justifyContent: "flex-start",
+          flex: 1,
+        }}>
         <Typography fontWeight={600} variant="h4">
           {name}
         </Typography>
@@ -52,7 +67,7 @@ const Product = ({ productId, name, price, qty, link }) => {
                   color: "#333",
                   marginLeft: "2rem",
                 }}>
-                {qty} X {price} &nbsp;=&nbsp; ₹ 50
+                {qty} X {price} &nbsp;=&nbsp; ₹ {totalQtyAmount(qty, price)}
               </Typography>
             )}
           </Stack>

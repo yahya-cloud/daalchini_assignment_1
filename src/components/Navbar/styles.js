@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export const StyledBox = styled(Box)(({ theme }) =>
   sx({
+    zIndex: 5,
     position: "fixed",
     width: "100vw",
     bottom: "0",
@@ -40,7 +41,7 @@ export const StyledNavLink = styled(NavLink)(
 
 export const StyledStack = styled(Stack)(
   sx({
-    width: "50%",
+    width: { xs: "90%", md: "50%" },
     justifyContent: "space-between",
   })
 );

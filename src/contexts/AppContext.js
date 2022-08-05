@@ -7,8 +7,6 @@ const AppProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [products, setProducts] = useState({ ...productsData });
 
-  console.log(products);
-
   const addProduct = (productId) => {
     const updatedProducts = {
       ...products,
@@ -29,6 +27,11 @@ const AppProvider = ({ children }) => {
     setProducts(updatedProducts);
   };
 
+  const resetProducts = () => {
+    console.log(productsData);
+    setProducts({ ...productsData });
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -38,6 +41,7 @@ const AppProvider = ({ children }) => {
         setProducts,
         addProduct,
         removeProduct,
+        resetProducts,
       }}>
       {children}
     </AppContext.Provider>

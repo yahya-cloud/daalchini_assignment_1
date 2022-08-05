@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@mui/material";
 import Navbar from "./components/Navbar";
 import theme from "./themes";

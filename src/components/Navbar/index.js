@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { StyledBox, StyledNavLink, StyledStack } from "./styles";
-import { useTheme } from "@emotion/react";
 import WidgetsIcon from "@mui/icons-material/Widgets";
-import { Box, Stack, Typography } from "@mui/material";
+import { Badge, Typography } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import PersonIcon from "@mui/icons-material/Person";
+import { AppContext } from "../../contexts/AppContext";
+import { totalOrderQty } from "../../libs/utils";
 
 const Navbar = () => {
-  const theme = useTheme();
+  const { products } = useContext(AppContext);
+  const totalQty = totalOrderQty(products);
+
   return (
     <StyledBox>
       <StyledStack direction={"row"}>
@@ -19,7 +22,12 @@ const Navbar = () => {
         </StyledNavLink>
 
         <StyledNavLink to="/cart">
-          <ShoppingCartIcon />
+          <Badge
+            badgeContent={totalQty}
+            sx={{ "& .MuiBadge-badge": { color: "#fff", fontSize: "1rem" } }}
+            color="secondary">
+            <ShoppingCartIcon />
+          </Badge>
           <Typography fontWeight={700} variant="h5">
             Cart
           </Typography>
