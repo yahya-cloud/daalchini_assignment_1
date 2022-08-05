@@ -3,12 +3,12 @@
 <p align="center">
 
   <strong>
-    <h1 align="center" >Schedule-e-Hamdard</h1>
+    <h1 align="center" >E-Commerce webapp || Daalchini Assignment 1</h1>
   </strong>
   
   <p align="center">
     <strong>
-     E-Cmmerce webapp || Daalchini Assignment 1
+      E-commerce webapp built with react and ❤️
     </strong>
     <br />
     <a href="https://github.com/yahya-cloud/daalchini_assignment_1"><strong>Explore the project »</strong></a>
